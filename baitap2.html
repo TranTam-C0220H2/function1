@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <label>Feet: <input type="number" oninput="changeMeters(this.value)"></label>
+    <div>= <span id="isMeters"></span> Meters</div>
+    <label>Meters: <input type="number" oninput="changeFeet(this.value)"></label>
+    <div>= <span id="isFeet"></span> Feet</div>
+</form>
+<script>
+    function changeMeters(feet) {
+        feet = parseFloat(feet);
+        document.getElementById('isMeters').innerHTML = feet * 0.305;
+    }
+
+    function changeFeet(meters) {
+        meters = parseFloat(meters);
+        document.getElementById('isFeet').innerHTML = meters * 3.279;
+    }
+</script>
+</body>
+</html>
