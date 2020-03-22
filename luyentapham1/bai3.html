@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Tạo hàm nhận vào hai tham số.
+        // Nếu giá trị của tham số thứ nhất lớn hơn tham số thứ hai, hiển thị hộp thoại thông báo cho người dùng.
+        // Nếu giá trị của tham số thứ nhất nhỏ hơn hoặc bằng tham số thứ hai, trả về tổng của hai tham số.
+        function MyFunction(number1, number2) {
+            this.number1 = number1;
+            this.number2 = number2;
+            this.compare = function () {
+                if (this.number1 > this.number2) {
+                    return 'Số thứ nhất lớn hơn số thứ 2';
+                } else {
+                    return 'Tổng 2 số là: ' + (this.number1 + this.number2);
+                }
+            }
+        }
+
+        function main() {
+            let num1 = +document.getElementById('isNumber1').value;
+            let num2 = +document.getElementById('isNumber2').value;
+            let myFunction = new MyFunction(num1, num2);
+            alert(myFunction.compare());
+        }
+    </script>
+</head>
+<body>
+<label>Số thứ nhất: <input type="number" id="isNumber1"></label><br>
+<label>Số thứ hai: <input type="number" id="isNumber2"></label><br>
+<button onclick="main()">Check</button>
+</body>
+</html>
