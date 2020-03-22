@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Viết hàm kiểm tra xem ký tự nhập vào có phải là ký tự số không.
+        // Nếu là ký tự số hàm trả về true, ngược lại trả về false.
+        function checkNumber() {
+            let number = '0123456789';
+            let arr = prompt('Nhập ký tự bất kỳ:');
+            for (let i =0; i<10;i++) {
+                if (arr ===number[i]) {
+                    return alert('true');
+                }
+            }
+            return alert('false');
+        }
+        checkNumber();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

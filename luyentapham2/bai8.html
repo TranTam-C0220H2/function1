@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Viết hàm truyền vào mảng số nguyên bất kỳ, sau đó đảo ngược mảng số nguyên đó.
+        function reverse() {
+            let arr = [];
+            for (let i = 0; i < Math.round(Math.random() * 20); i++) {
+                arr[i] = Math.round(Math.random() * 50) - 25;
+            }
+            document.write('Mảng khởi tạo: ' + arr + '<br>');
+            document.write('Đảo ngược mảng: ' + arr.reverse());
+        }
+        reverse();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Viết hàm truyền vào 2 số nguyên bất kì, thực hiện đổi chỗ hai số nguyên đó.
+        function changeLocation() {
+            let number1 = +prompt('Số nguyên thứ nhất:');
+            let number2 = +prompt('Số nguyên thứ hai:');
+            document.write(number1 + ',' + number2 + '<br>');
+            let tmp = number1;
+            number1 = number2;
+            number2 = tmp;
+            document.write(number1 + ',' + number2);
+        }
+
+        changeLocation();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

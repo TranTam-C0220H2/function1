@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        // Viết hàm nhận vào 3 số nguyên bất kỳ, trả về số nguyên có giá trị nhỏ nhất.
+        function calMin() {
+            let number1 = +prompt('Số nguyên thứ nhất:');
+            let number2 = +prompt('Số nguyên thứ hai:');
+            let number3 = +prompt('Số nguyên thứ ba:');
+            let Min = number1;
+            if (Min>number2) {
+                Min=number2;
+            }
+            if (Min>number3) {
+                Min =number3;
+            }
+            return alert('Giá trị nhỏ nhất trong 3 số là: ' + Min);
+        }
+        calMin();
+    </script>
+</head>
+<body>
+
+</body>
+</html>

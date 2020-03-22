@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        //Viết hàm tính giai thừa của một số nguyên bất kỳ được đưa vào. Gọi hàm vừa xây dựng được.
+        function myFactorial() {
+            let myNumber = +prompt('Nhập số n: ');
+            let factorial = 1;
+            if (myNumber < 0) {
+                return alert('Không tính được giai thừa số n');
+            } else if (myNumber === 0) {
+                alert('n! = 0');
+            } else {
+                for (let i = myNumber; i > 0; i--) {
+                    factorial *= i;
+                }
+                return alert('Giai thừa số n: ' + factorial);
+            }
+        }
+
+        myFactorial();
+    </script>
+</head>
+<body>
+
+</body>
+</html>
